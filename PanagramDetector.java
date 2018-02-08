@@ -16,13 +16,13 @@ class PanagramDetector
     boolean isPan;
     
 
-    for (int index = 0; index < letters.length; index++) { // go through loop entire time for 
-                                                        //each letter
-      char letter = string_char_array.charAt(index);
+    for (int index = 0; index < alphabet_char_array.length; index++) { // go through loop entire time for 
+                                                        //each letter in alphabet
+      char letter = alphabet_char_array.charAt(index);
 
 
-        for (int i = 0; i < alphabet_char_array.length; i++){//go through alphabet for matches
-            char current_letter = alphabet_char_array[i];
+        for (int i = 0; i < string_char_array.length; i++){//go through alphabet for matches
+            char current_letter = string_char_array[i];
 
             if (letter.equals(current_letter) || letter.equals(" ")){
                 isPan = true;
