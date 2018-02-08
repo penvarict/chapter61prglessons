@@ -24,7 +24,7 @@ class PanagramDetector
         for (int i = 0; i < alphabet_char_array.length; i++){//go through alphabet for matches
             char current_letter = alphabet_char_array[i];
 
-            if (letter.equals(current_letter) ){
+            if (letter.equals(current_letter) || letter.equals(" ")){
                 isPan = true;
                 
             }
